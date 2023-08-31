@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+a {
+  margin: 20px;
+  color: grey;
+}
+
+.App nav a.active {
+  color: black;
+}
+
+.vending-links {
+  left: 10%;
+  top: 50%;
+  width: 200px;
+  transform: translate(0, -50%);
+  border-radius: 15px;
+  height: 200px;
+  position: absolute;
+  background-color: rgba(84, 84, 84, 0.5);
+}
+.vending-links a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  font-size: 1.6em;
+}
+
+.vending-links a:hover {
+  text-decoration: underline;
+}
+.HomeLink {
+  right: 20%;
+  top: 50%;
+  width: 200px;
+  transform: translate(0, -50%);
+  border-radius: 15px;
+  height: 200px;
+  position: absolute;
+  background-color: rgba(84, 84, 84, 0.5);
+}
+
+.HomeLink a {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  display: block;
+  font-size: 1.6em;
+  top: 15%;
+  transform: (0, -50%);
+}
+
+.HomeLink a:hover {
+  text-decoration: underline;
+}
+
+.Chips-bag {
+  position: absolute;
+  background-image: url(https://cdn11.bigcommerce.com/s-840m18ew7o/images/stencil/1280x1280/products/3286/4868/25600__26707.1593452382.jpg?c=1);
+  background-size: cover;
+  height: 150px;
+  width: 130px;
+}
+
+.Candy-bar {
+  overflow: none;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  background-image: url(https://eapi.supplyhog.com/file-srv/img/i_2c67776a2046a8118a561574f626dddf.jpg?o%5Bw%5D=800&o%5Bh%5D=800&o%5Bf%5D=1&defaultImgFile=default.jpg);
+  background-size: cover;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotating {
+  animation: rotate 1s linear infinite;
+}
+
+.Soda-bottle {
+  position: absolute;
+  top: 30vh;
+  left: 40vw;
+  transform: translate(-50%, -50%);
+  height: 400px;
+  width: 400px;
+  background-image: url(https://images.albertsons-media.com/is/image/ABS/960013856-ECOM?$ng-ecom-pdp-desktop$&defaultImage=Not_Available);
+  background-size: cover;
+}
+
+.Chips {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(48, 48, 48, 0.5);
+  border-radius: 20px;
+  border: 1px solid white;
+}
+
+.Chips-button {
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
+}
